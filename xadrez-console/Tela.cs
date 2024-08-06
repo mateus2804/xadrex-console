@@ -8,7 +8,8 @@ namespace xadrez_console
         {
             for (int i =0; i < tab.linhas; i++)
             {
-                for (int j  =0; j < tab.colunas; j++)
+                Console.Write($"{tab.linhas - i} ");
+                for (int j =0; j < tab.colunas; j++)
                 {
                     if (tab.getPeca(i, j) == null)
                     {
@@ -21,6 +22,12 @@ namespace xadrez_console
                 }
                 Console.WriteLine();
             }
+            Console.Write(" ");
+            for (int k = 0; k <  tab.colunas; k++)
+            {
+                Console.Write($" {(char)('a' + k)}");
+            }
         }
+        
     }
 }
