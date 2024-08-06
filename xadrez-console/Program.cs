@@ -1,10 +1,15 @@
-﻿namespace xadrez_console
+﻿using xadrez_console.tabuleiro;
+
+
+namespace xadrez_console
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World! Mateus");
+            Tabuleiro tabuleiro = new Tabuleiro(8, 8);
+
+            Tela.imprimirTabuleiro(tabuleiro);
         }
     }
 }
